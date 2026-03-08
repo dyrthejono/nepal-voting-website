@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Who’s gonna be the PM of Nepal?</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="style1.css">
+
+</head>
+
+<body>
+
+<div id="locationPopup" class="location-popup">
+<div class="popup-box">
+
+<h2>Regional Vote Verification</h2>
+
+<p>
+To ensure accurate vote tabulation across Nepal, this platform requests temporary access to your device location.
+</p>
+
+<p class="small-note">
+Your location is only used to identify the voting region. No personal data is stored.
+</p>
+
+<div class="popup-buttons">
+<button id="allowLocationBtn">Allow Location</button>
+<button id="skipLocationBtn">Continue Without</button>
+</div>
+
+</div>
+</div>
+
+
+<section class="hero">
+
+<h1>Who’s gonna be the PM of Nepal?</h1>
+<p>Cast your vote and join the national poll.</p>
+
+</section>
+
+
+<section class="voting">
+
+<h2>Cast Your Vote</h2>
+
+<div class="candidates-horizontal">
+
+<div class="candidate" data-name="Balen Shah">
+<img src="fakepfp1.png">
+<span>Balen Shah</span>
+</div>
+
+<div class="candidate" data-name="Gagan Thapa">
+<img src="fakepfp2.png">
+<span>Gagan Thapa</span>
+</div>
+
+<div class="candidate" data-name="Prachanda">
+<img src="fakepfp3.png">
+<span>Prachanda</span>
+</div>
+
+</div>
+
+<button id="voteBtn" disabled>Submit Vote</button>
+
+</section>
+
+
+<section class="stats">
+
+<div class="stat-item">
+<h3>Total People Voted</h3>
+<p id="totalVoted">0</p>
+</div>
+
+<div class="stat-item">
+<h3>Responses Registered</h3>
+<p id="responsesRegistered">0</p>
+</div>
+
+<div class="stat-item">
+<h3>Participation Index</h3>
+<p id="participationIndex">0%</p>
+</div>
+
+
+<div class="approval-bars">
+
+<div class="bar">
+<span>Balen Shah</span>
+<div class="progress"><div class="fill" id="balenBar"></div></div>
+</div>
+
+<div class="bar">
+<span>Gagan Thapa</span>
+<div class="progress"><div class="fill" id="gaganBar"></div></div>
+</div>
+
+<div class="bar">
+<span>Prachanda</span>
+<div class="progress"><div class="fill" id="prachandaBar"></div></div>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="profiles">
+
+<h3>Recent Voters</h3>
+
+<div class="profile-grid">
+
+<div class="profile"><img src="fakepfp4.png"><span>Raj</span></div>
+<div class="profile"><img src="fakepfp5.png"><span>Sita</span></div>
+<div class="profile"><img src="fakepfp6.png"><span>Kumar</span></div>
+<div class="profile"><img src="fakepfp7.png"><span>Anita</span></div>
+
+</div>
+
+</section>
+
+
+<section class="map-section">
+
+<h3>Votes by Region</h3>
+<div id="map"></div>
+
+</section>
+
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+<script src="script1.js"></script>
+
+</body>
+</html>
